@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meucadastro.ui.activity.CadastrarActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome*:"/>
+    <!--Campo editável tipo texto-->
+    <!--match_parent: A View deve ocupar o espaço igual ao da sua Parent View-->
+    <!--hint: funciona como um placeholder (Descreve o que deve ser inserido no campo).-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inpnome"
+        android:hint="Digite o nome do produto"
+        />
+    <!--Componente de texto fixo-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preco*:"/>
+    <!--Campo editável tipo texto-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inppreco"
+        />
+    <!--Componente de texto fixo-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição*:"/>
+    <!--Campo editável tipo texto-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inpdesc"
+        />
+    <!--Componente de texto fixo-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria*:"/>
+    <!--Componente de dropdown-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inpCat"
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/btnSalvar"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+</LinearLayout>
